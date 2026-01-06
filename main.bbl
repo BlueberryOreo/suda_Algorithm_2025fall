@@ -1,0 +1,122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{menon2025optimalgeneralsolutionmultipeg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3aca611bbf7e727358ba639eeea59065}{%
+           family={Menon},
+           familyi={M\bibinitperiod},
+           given={Abhiram},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=3aca611bbf7e727358ba639eeea59065}{%
+           family={Menon},
+           familyi={M\bibinitperiod},
+           given={Abhiram},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{fullhash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{bibnamehash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{authorbibnamehash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{authornamehash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{authorfullhash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{nameabibnamehash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{nameanamehash}{3aca611bbf7e727358ba639eeea59065}
+      \strng{nameafullhash}{3aca611bbf7e727358ba639eeea59065}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.CO}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{On The Optimal General Solution To The Multi-Peg Tower of Hanoi}
+      \field{usera}{EB}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2505.12941
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2505.12941
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2505.12941
+      \endverb
+      \keyw{menon2025optimalgeneralsolutionmultipeg}
+    \endentry
+    \entry{wiki:Vandermonde}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f0d4e28eb39c2f9156ff1dd9baf9c2ea}{%
+           family={{维基百科贡献者}},
+           familyi={维\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=f0d4e28eb39c2f9156ff1dd9baf9c2ea}{%
+           family={{维基百科贡献者}},
+           familyi={维\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{fullhash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{bibnamehash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{authorbibnamehash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{authornamehash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{authorfullhash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{nameabibnamehash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{nameanamehash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \strng{nameafullhash}{f0d4e28eb39c2f9156ff1dd9baf9c2ea}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{范德蒙德矩阵}
+      \field{usera}{EB}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://zh.wikipedia.org/w/index.php?title=%E8%8C%83%E5%BE%B7%E8%92%99%E5%BE%B7%E7%9F%A9%E9%98%B5&oldid=90577510
+      \endverb
+      \verb{url}
+      \verb https://zh.wikipedia.org/w/index.php?title=%E8%8C%83%E5%BE%B7%E8%92%99%E5%BE%B7%E7%9F%A9%E9%98%B5&oldid=90577510
+      \endverb
+      \keyw{wiki:Vandermonde}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
