@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1767716936.50382 "main.bcf" "main.bbl" "main" 1767723413.11584 0
-  "main.bcf" 1767723412 136200 273d784dfde742cc2e7912fba6984527 "pdflatex"
+["biber main"] 1767756487.0531 "main.bcf" "main.bbl" "main" 1767756640.69209 0
+  "main.bcf" 1767756639 136200 273d784dfde742cc2e7912fba6984527 "pdflatex"
   "main.bib" 1767691538 575 b410f765396d9a8ea1edb50819bc19e0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1767723410.82861 "main.tex" "main.pdf" "main" 1767723413.11639 0
+["pdflatex"] 1767756637.85484 "main.tex" "main.pdf" "main" 1767756640.69259 0
   "c:/Windows/Fonts/msyh.ttc" 1738146388 19704352 1e10e74402e59d54499af795caf0b135 ""
   "c:/Windows/Fonts/simhei.ttf" 1711630440 9755440 983b60188a8e5a7c29c06c674f428b3d ""
   "c:/Windows/Fonts/simkai.ttf" 1711630440 11789376 868a8b82664dfab00a95e3e30eaa705a ""
@@ -67,6 +67,7 @@
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei63.tfm" 1712469683 1172 fff11ea27394506a041a526a495f9652 ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei64.tfm" 1712469683 1172 abd4be36b7787f9979caadfeef9cdae5 ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei65.tfm" 1712469683 1172 c34b1545992ab0d7393a03f889ceeb86 ""
+  "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei66.tfm" 1712469683 1172 023ac6647c726f082a8ecd4350d68793 ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei67.tfm" 1712469683 1172 127372bbba8b4f4a65a26e565c0c6a2e ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei68.tfm" 1712469683 1172 a6e39128d14a2d8e22ed8239e864feff ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unihei/unihei69.tfm" 1712469683 1172 5ff5aedb967b76341e9dd27872cc92b0 ""
@@ -155,6 +156,7 @@
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong61.tfm" 1712469684 1172 0c54aba04f6eca94b3b31a372d096e93 ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong62.tfm" 1712469684 1172 9ffac14c72fbc4879502782835fb1e0a ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong63.tfm" 1712469683 1172 5558042a53f0a34c54eaf1c8af13f377 ""
+  "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong64.tfm" 1712469684 1172 9123bc1a52f39fa754022a43a1394244 ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong65.tfm" 1712469683 1172 2873dd6228ece5c9b075cfdc580febae ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong66.tfm" 1712469683 1172 f300cf9aac35a61638796e3d2ecc0e47 ""
   "e:/latex/texlive/2024/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong67.tfm" 1712469683 1172 bfeea74ab6553bd251ccbd092c04122a ""
@@ -402,16 +404,18 @@
   "e:/latex/texlive/2024/texmf.cnf" 1712469691 713 e69b156964470283e0530f5060668171 ""
   "figures/1e540d282acce33bfb8f2a33b752516b.png" 1767691559 41878 336b176bd39aa57b7ef976dd13334d11 ""
   "figures/500px-Tower_of_Hanoi_recursion_SMIL.svg.png" 1767691541 39203 4497fc5fd5be1ee8383605cc28041182 ""
+  "figures/binary_search.png" 1767754950 344129 dfe68e527b75a61678a748336e15555b ""
   "figures/checkboard.jpg" 1767710592 4000 ad240313bea0c3f1e838a0ac662ebd03 ""
   "figures/checkboard_solution.jpg" 1767711032 10969 53873949e1dea59d0476cbdcaba9d57a ""
   "figures/domino.jpg" 1767710631 7022 bb7f9992af0e5a794da1801d775e799e ""
+  "figures/is_almost_sort.png" 1767755271 3028680 12a60a96de9e9a96a7f27d91ccf5172c ""
   "figures/nearest_point.png" 1767710277 70392 9737403aa61598c9066841ba325e0d04 ""
   "figures/queens.png" 1767720919 167578 4bd86cb079273379f15a05cf51259416 ""
-  "main.aux" 1767723412 8642 a7109e6a4abbd181c07ca7eeca61703b "pdflatex"
-  "main.bbl" 1767716937 4395 c3172ad201d20ff26d88b0d8ce957bed "biber main"
-  "main.out" 1767723412 2033 262d5ad886122c3b83954649125f1f2e "pdflatex"
-  "main.run.xml" 1767723412 2410 c6a77130c6aed56853422edb091b4bc5 "pdflatex"
-  "main.tex" 1767723409 25931 bd1be0dc5f7a7bf8d0de1add16f803cb ""
+  "main.aux" 1767756639 9773 113d232fae9967c8e557dfe11e20ba47 "pdflatex"
+  "main.bbl" 1767756488 4395 c3172ad201d20ff26d88b0d8ce957bed "biber main"
+  "main.out" 1767756639 2246 bf4972574ec22388b4c80fe4cd0aa85f "pdflatex"
+  "main.run.xml" 1767756639 2410 c6a77130c6aed56853422edb091b4bc5 "pdflatex"
+  "main.tex" 1767756636 29376 a653ffda3d917e96d5f3897bf0ee6512 ""
   (generated)
   "main.aux"
   "main.bcf"

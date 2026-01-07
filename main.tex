@@ -544,6 +544,34 @@ MC算法：随机从$A$中选一个元素，然后计算这个元素的个数，
 
 MC算法：构造一个随机$0/1$二值行向量，将判断$AB=C$改为判断$XAB=XC$。时间复杂度为$O(n^2)$。是一个偏假的正确概率为$1/2$的MC算法，因为当返回false时算法一定正确。
 
+\paragraph{判断序列是否是有序的} 定义一个序列是几乎有序的，如果这个序列中至少有90\%的数据是有序的，即可删除其中不超过10\%的数据使得剩下的序列有序。现需设计一个算法检查一个序列是否几乎有序，输入一个不包含重复元素的序列$A$，其输出如下：如果序列已完全排序，则总是返回true，否则以至少2/3的概率返回false。
+
+\paragraph{箱子取球} 假设箱子中一共有$n$个球，其中至少10\%的球是蓝色球，剩下的球是红色球。现有放回地随机抽球，则需要抽取多少次才能以不少于2/3的概率抽到一个蓝色球？
+
+抽一次抽到蓝色球的概率是$0.1$，抽到红色球的概率是$1-0.1=0.9$。每次抽取都是独立的，于是抽$n$次全是红色球的概率是$0.9^n$，至少抽中一次蓝球的概率为$1-0.9^n$。因此有
+$$
+1-0.9^n>\frac{2}{3} \Rightarrow n > \log_{0.9}\frac{1}{3} \approx 10.427
+$$
+
+因此至少抽取11次。
+
+\paragraph{二分搜索算法处理并非有序的数组} 给定如下二分算法：
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/binary_search.png}
+    \caption{二分搜索算法}
+    \label{fig:binary-search}
+\end{figure}
+假设在序列$A$中查找的$key$值为$key_1$时算法返回下标$i$，查找$key_2$值是算法返回下标$j$，且$A$并非有序。证明：若$i<j$，则$key_1<key_2$。
+
+\paragraph{判断序列是否几乎有序}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/is_almost_sort.png}
+    \caption{题目}
+    \label{fig:is-almost-sorted}
+\end{figure}
+
 \section{分布式算法}
 
 \subsection{模型}
@@ -597,6 +625,35 @@ MC算法：构造一个随机$0/1$二值行向量，将判断$AB=C$改为判断$
 \subsubsection{同步系统和异步系统}
 
 
+\section{近似算法}
+
+\subsection{贪心求解0-1背包问题}
+
+输入：正整数$S, w_1, v_1, w_2, v_2, ..., w_n, v_n$，其中$S$为背包容量。按照单位价值最大进行贪心：
+\begin{itemize}
+    \item 依据单位价值（$v_i/w_i$）的大小，依单调递减顺序排列所有物品，不妨设$v_1/w_1\geq v_2/w_2\geq \cdots\geq v_n/w_n$
+    \item 若$\sum_{i=1}^nw_i\leq S$，则输出$C_G\leftarrow \sum_{i=1}^nv_i$；否则求出最大的$k$，使其满足：
+    $$
+        \sum_{i=1}^kw_i\leq S<\sum_{i=1}^{k+1}w_i
+    $$
+    输出$C_G\leftarrow\max\{v_{k+1}, \sum_{i=1}^{k}v_i\}$
+\end{itemize}
+
+定理：对于背包问题的一个实例，设$opt$表示最优解目标函数值，$C_G$是由上述算法生成的近似解目标函数值，则$opt\leq 2C_G$（近似比为2）
+
+证明：
+\begin{itemize}
+    \item 若$\sum_{i=1}^nw_i\leq S$，则$C_G=opt$
+    \item 若$\sum_{i=1}^n w_i>W$，设$k$是算法得到的整数，可证$\sum_{i=1}^kv_i\leq opt\leq \sum_{i=1}^{k+1}v_i$
+\end{itemize}
+
+先放前$k$个物品，假定第$(k+1)$个物品可分割，将背包装满，用其他物品代替只会降低背包物品的价值/重量比值。
+
+$opt$小于$\sum_{i=1}^{k+1}v_i$，最优值$opt$上界（非紧）求解：
+\begin{align*}
+    opt \leq \hat{c} = \sum_{i=1}^k v_i+\underbrace{\frac{v_{k+1}}{w_{k+1}}\left(W-\sum_{i=1}^k w_i\right)}_{\text{第}k+1\text{个物品部分放入的价值}} < \sum_{i=1}^{k} v_i + \underbrace{\frac{v_{k+1}}{w_{k+1}}\cdot w_{k+1}}_{\text{比全部放入的价值小}}=\sum_{i=1}^{k+1}v_i \\
+    C_G = \max\left\{v_{k+1}, \sum_{i=1}^k v_i\right\}\geq\frac{1}{2}\sum_{i=1}^{k+1}v_i\geq\frac{opt}{2} \Rightarrow \max\{a, b\}\geq \frac{1}{2}(a+b)
+\end{align*}
 
 \printbibliography
 
